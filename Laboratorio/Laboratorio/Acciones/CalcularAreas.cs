@@ -13,12 +13,14 @@ namespace Laboratorio.Acciones
             {
                 CalcularPerimetros Perimetro = new CalcularPerimetros();
                 Perimetro.CalcularPerimetroTriagulos(triangulo);
-
+                double semi=(triangulo.getPerimetro()/2);
+                triangulo.setArea(Math.Sqrt(semi*(semi - triangulo.getLadoA()) * (semi - triangulo.getLadoB()) * (semi - triangulo.getLadoc())));
             }
             else {
-
+                double semi = (triangulo.getPerimetro() / 2);
+                triangulo.setArea(Math.Sqrt(semi * (semi - triangulo.getLadoA()) * (semi - triangulo.getLadoB()) * (semi - triangulo.getLadoc())));
             }
+
         }
-        public
     }
 }
