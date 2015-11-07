@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace Laboratorio
 {
-    class Cuadrado
+   public class Rectangulo
     {
-        double Lado;
+        double LadoA;
+        double LadoB;
         double Area;
         double Perimetro;
-        double NumeroLados;
 
-        public void setLado(double medida)
+        public void setLadoA(double medida)
         {
-            Lado = medida;
+            LadoA = medida;
+        }
+        public void setLadoB(double medida)
+        {
+            LadoB = medida;
         }
         public void setArea(double medida)
         {
@@ -25,13 +29,13 @@ namespace Laboratorio
         {
             Perimetro = medida;
         }
-        public void setNumeroLados(double medida)
+        public double getLadoA()
         {
-            NumeroLados = medida;
+            return LadoA;
         }
-        public double getLado()
+        public double getLadoB()
         {
-            return Lado;
+            return LadoB;
         }
         public double getArea()
         {
@@ -40,10 +44,6 @@ namespace Laboratorio
         public double getPerimetro()
         {
             return Perimetro;
-        }
-        public double getNumeroLados()
-        {
-            return NumeroLados;
         }
     }
 }

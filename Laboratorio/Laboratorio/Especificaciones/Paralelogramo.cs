@@ -6,25 +6,16 @@ using System.Threading.Tasks;
 
 namespace Laboratorio
 {
-    public class Triangulo
+    public class Paralelogramo
     {
-        double LadoA;
-        double LadoB;
-        double LadoC;
+        double Lado;
         double Area;
         double Perimetro;
         double Altura;
-    
-         public void setLadoA(double medida) {
-            LadoA = medida;
-        }
-        public void setLadoB(double medida)
+
+        public void setLadoA(double medida)
         {
-            LadoB = medida;
-        }
-        public void setLadoC(double medida)
-        {
-            LadoC = medida;
+            Lado = medida;
         }
         public void setArea(double medida)
         {
@@ -38,17 +29,9 @@ namespace Laboratorio
         {
             Altura = medida;
         }
-        public double getLadoA()
+        public double getLado()
         {
-            return LadoA;
-        }
-        public double getLadoB()
-        {
-            return LadoB;
-        }
-        public double getLadoc()
-        {
-            return LadoC;
+            return Lado;
         }
         public double getArea()
         {

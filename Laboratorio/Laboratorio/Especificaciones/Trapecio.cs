@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace Laboratorio
 {
-    class Rectangulo
+   public class Trapecio
     {
         double LadoA;
         double LadoB;
         double Area;
         double Perimetro;
+        double Altura;
 
         public void setLadoA(double medida)
         {
@@ -29,6 +30,10 @@ namespace Laboratorio
         {
             Perimetro = medida;
         }
+        public void setAltura(double medida)
+        {
+            Altura = medida;
+        }
         public double getLadoA()
         {
             return LadoA;
@@ -44,6 +49,10 @@ namespace Laboratorio
         public double getPerimetro()
         {
             return Perimetro;
+        }
+        public double getAltura()
+        {
+            return Altura;
         }
     }
 }

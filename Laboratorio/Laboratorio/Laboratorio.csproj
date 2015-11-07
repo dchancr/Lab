@@ -40,22 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\CalcularApotema.cs" />
     <Compile Include="Acciones\CalcularAreas.cs" />
     <Compile Include="Acciones\CalcularPerimetros.cs" />
-    <Compile Include="Cuadrado.cs" />
-    <Compile Include="Paralelogramo.cs" />
-    <Compile Include="Poligono.cs" />
-    <Compile Include="Rectangulo.cs" />
-    <Compile Include="Rombo.cs" />
-    <Compile Include="Romboide.cs" />
-    <Compile Include="Trapecio.cs" />
-    <Compile Include="Triangulo.cs" />
+    <Compile Include="Especificaciones\Cuadrado.cs" />
+    <Compile Include="Especificaciones\Paralelogramo.cs" />
+    <Compile Include="Especificaciones\Poligono.cs" />
+    <Compile Include="Especificaciones\Rectangulo.cs" />
+    <Compile Include="Especificaciones\Rombo.cs" />
+    <Compile Include="Especificaciones\Romboide.cs" />
+    <Compile Include="Especificaciones\Trapecio.cs" />
+    <Compile Include="Especificaciones\Triangulo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validaciones\ValidarLados.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Especificaciones\" />
-    <Folder Include="Validaciones\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

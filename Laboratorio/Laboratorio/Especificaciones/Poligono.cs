@@ -6,25 +6,36 @@ using System.Threading.Tasks;
 
 namespace Laboratorio
 {
-    class Romboide
+    public class Poligono
     {
-        double LadoA;
-        double LadoB;
+        double Lado;
+        double NumeroLado;
         double Area;
         double Perimetro;
         double Altura;
+        double Angulo;
+        double Apotema;
+
 
         public void setLadoA(double medida)
         {
-            LadoA = medida;
+            Lado = medida;
         }
-        public void setLadoB(double medida)
+        public void setNumeroLados(double medida)
         {
-            LadoB = medida;
+            NumeroLado = medida;
         }
         public void setArea(double medida)
         {
             Area = medida;
+        }
+        public void setAngulo(double medida)
+        {
+            Angulo = medida;
+        }
+        public void setApotema(double medida)
+        {
+            Apotema = medida;
         }
         public void setPerimetro(double medida)
         {
@@ -36,11 +47,11 @@ namespace Laboratorio
         }
         public double getLadoA()
         {
-            return LadoA;
+            return Lado;
         }
-        public double getLadoB()
+        public double getNumeroLado()
         {
-            return LadoB;
+            return NumeroLado;
         }
         public double getArea()
         {
@@ -53,6 +64,14 @@ namespace Laboratorio
         public double getAltura()
         {
             return Altura;
+        }
+        public double getApotema()
+        {
+            return Apotema;
+        }
+        public double getAngulo()
+        {
+            return Angulo;
         }
     }
 }

@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace Laboratorio
 {
-    class Trapecio
+   public class Rombo
     {
-        double LadoA;
-        double LadoB;
+        double Lado;
         double Area;
         double Perimetro;
-        double Altura;
+        double Diagonal;
+        double DiagonalM;
 
-        public void setLadoA(double medida)
+        public void setLado(double medida)
         {
-            LadoA = medida;
-        }
-        public void setLadoB(double medida)
-        {
-            LadoB = medida;
+            Lado = medida;
         }
         public void setArea(double medida)
         {
@@ -30,17 +26,17 @@ namespace Laboratorio
         {
             Perimetro = medida;
         }
-        public void setAltura(double medida)
+        public void setDiagonal(double medida)
         {
-            Altura = medida;
+            Diagonal = medida;
         }
-        public double getLadoA()
+        public void setDiagonalM(double medida)
         {
-            return LadoA;
+            DiagonalM = medida;
         }
-        public double getLadoB()
+        public double getLado()
         {
-            return LadoB;
+            return Lado;
         }
         public double getArea()
         {
@@ -50,9 +46,13 @@ namespace Laboratorio
         {
             return Perimetro;
         }
-        public double getAltura()
+        public double getDiagonal()
         {
-            return Altura;
+            return Diagonal;
+        }
+        public double getDiagonalM()
+        {
+            return DiagonalM;
         }
     }
 }

@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace Laboratorio
 {
-    class Rombo
+    public class Romboide
     {
-        double Lado;
+        double LadoA;
+        double LadoB;
         double Area;
         double Perimetro;
-        double Diagonal;
+        double Altura;
 
-        public void setLado(double medida)
+        public void setLadoA(double medida)
         {
-            Lado = medida;
+            LadoA = medida;
+        }
+        public void setLadoB(double medida)
+        {
+            LadoB = medida;
         }
         public void setArea(double medida)
         {
@@ -25,13 +30,17 @@ namespace Laboratorio
         {
             Perimetro = medida;
         }
-        public void setDiagonal(double medida)
+        public void setAltura(double medida)
         {
-            Diagonal = medida;
+            Altura = medida;
         }
-        public double getLado()
+        public double getLadoA()
         {
-            return Lado;
+            return LadoA;
+        }
+        public double getLadoB()
+        {
+            return LadoB;
         }
         public double getArea()
         {
@@ -41,9 +50,9 @@ namespace Laboratorio
         {
             return Perimetro;
         }
-        public double getDiagonal()
+        public double getAltura()
         {
-            return Diagonal;
+            return Altura;
         }
     }
 }
